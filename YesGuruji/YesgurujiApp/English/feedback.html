@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Contact US</title>
+    <title>Feedback</title>
     <meta name="description" content="Free Bootstrap Theme by uicookies.com">
     <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
 
@@ -18,7 +18,7 @@
     <![endif]-->
     <style>
         .addRateColor{
-           color: yellow;
+           color: #FFD700;
         }
         
     </style>
@@ -73,7 +73,7 @@
                         <li><a href="index.html">Home</a></li>
                         <li><a href="courses.html">Courses</a></li>
                         <li><a href="teachers.html">Faculty</a></li>
-                        <li><a href="contact.html">Ask Question</a></li>
+                         <li><a href="askquestion.html">Ask Question</a></li>
 
 
                         <li><a href=""><div style="border-radius: 25px;background-color:#edf8d8; width: 44px;border: 1px solid green;padding: 3px; margin: 0px;"> Hindi </div></a></li>
@@ -88,7 +88,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 text-left section-heading probootstrap-animate">
-                        <h1 class="mb0">Feed Back</h1>
+                        <h1 class="mb0">Video Feedback</h1>
                     </div>
                 </div>
             </div>
@@ -104,34 +104,46 @@
                                     <h3>Hello !!!</h3>
                                     <ul class="probootstrap-side-menu">
 
-                                        On this page you can contact us by using the below form and choosing the appropriate category.
-                                        We will try our best to get back back to you within 2 working days.
-
+                                        On this page you can view earlier recent feedbacks and also give your own feedback related to the video that you watched. Please select the star rating and the comments (optional) and submit your feedback. 
                                     </ul>
                                 </div>
                             </div>
                             <div class="col-md-7 col-md-push-1  probootstrap-animate" id="probootstrap-content">                               
                                 <form name="feedbackform" id="feedbackform">
+                                       
                                         <div class="form-group">
-                                            <label for="VideoName">Name :- </label>
-                                            <strong><span id="spanVideoId" >Video Name</span></strong>                                            
+                                            <label for="VideoName">Video Name:</label>
+                                            <strong><span id="spanVideoId" >Video Name</span></strong>   
+                                            <img height="20px" src="./img/4star.png" > </img>
                                         </div> 
+                                         
+                                        <div class="form-group">
+                                            <label for="VideoName">Please select star rating from below:</label>
+                                        </div> 
+
                                         <div class="form-group">
                                             <div class="review-block-rate" id="dvRating">
-                                                <button type="button" class="btn btn-xs" aria-label="Left Align" onclick="btnClickRating('1')" id="btnRate1"> <span class="glyphicon glyphicon-star" aria-hidden="true"></span> </button>
-                                                <button type="button" class="btn btn-xs" aria-label="Left Align" onclick="btnClickRating('2')" id="btnRate2"> <span class="glyphicon glyphicon-star" aria-hidden="true"></span> </button>
-                                                <button type="button" class="btn btn-xs" aria-label="Left Align" onclick="btnClickRating('3')" id="btnRate3"> <span class="glyphicon glyphicon-star" aria-hidden="true"></span> </button>
-                                                <button type="button" class="btn btn-xs" aria-label="Left Align" onclick="btnClickRating('4')" id="btnRate4"> <span class="glyphicon glyphicon-star" aria-hidden="true"></span> </button>
-                                                <button type="button" class="btn btn-xs" aria-label="Left Align" onclick="btnClickRating('5')" id="btnRate5"> <span class="glyphicon glyphicon-star" aria-hidden="true"></span> </button>
+                                                <button type="button" style="background:white; border:2px solid #FFD700;" class="btn btn-xs" aria-label="Left Align" onclick="btnClickRating('1')" id="btnRate1"> <span class="glyphicon glyphicon-star" aria-hidden="true"></span> </button>
+                                                <button type="button" style="background:white; border:2px solid #FFD700;" class="btn btn-xs" aria-label="Left Align" onclick="btnClickRating('2')" id="btnRate2"> <span class="glyphicon glyphicon-star" aria-hidden="true"></span> </button>
+                                                <button type="button" style="background:white; border:2px solid #FFD700;" class="btn btn-xs" aria-label="Left Align" onclick="btnClickRating('3')" id="btnRate3"> <span class="glyphicon glyphicon-star" aria-hidden="true"></span> </button>
+                                                <button type="button" style="background:white; border:2px solid #FFD700;" class="btn btn-xs" aria-label="Left Align" onclick="btnClickRating('4')" id="btnRate4"> <span class="glyphicon glyphicon-star" aria-hidden="true"></span> </button>
+                                                <button type="button" style="background:white; border:2px solid #FFD700;" class="btn btn-xs" aria-label="Left Align" onclick="btnClickRating('5')" id="btnRate5"> <span class="glyphicon glyphicon-star" aria-hidden="true"></span> </button>
                                             </div>
                                         </div>
-                                        <div class="form-group">
-                                            <label for="Comment">Comment</label>
-                                            <textarea cols="20" rows="5" class="form-control" id="Comment" name="Comment"></textarea>
+                                            <div class="form-group">
+                                           
+                                            <textarea cols="20" placeholder= "Please enter your comments here" rows="5" class="form-control" id="Comment" name="Comment"></textarea>
                                         </div>                                      
                                         <div class="form-group">
-                                            <input type="submit" class="btn btn-primary btn-lg" id="Save" name="Save" value="Send Feedback">
+                                            <input type="submit" class="btn btn-primary btn-lg" id="Save" name="Save" value="Submit Feedback">
                                         </div>
+
+                                         <br> 
+
+                                         <div class="form-group">
+                                           <label for="Comment">Recent Feedbacks</label> 
+                                        </div>  
+                            </form>                 
                             </form>                              
                             </div>
                         </div>
@@ -160,7 +172,7 @@
                 </div>
             </div>
         </section>
-
+        <br><br><br><br><br><br><br><br><br>
         <section class="probootstrap-cta">
             <div class="container">
                 <div class="row">
@@ -240,7 +252,7 @@
                     <p style="display:none;" id="pAlter"> Please select rate then submit your feedback.</p>
                 </div>
                 <div class="modal-footer">
-                    <button id="btnHideClose" type="button" class="btn btn-default" data-dismiss="modal" onclick='location.href="/YesgurujiApp/English/index.html"'>Close</button>
+                   <button id="btnHideClose" type="button" class="btn btn-default" data-dismiss="modal" onclick='location.href="/YesgurujiApp/English/index.html"'>Close</button>
                 </div>
             </div>
         </div>
@@ -266,7 +278,7 @@
         var objVideoData = [
                        {
                            Id: 1,
-                           VideoName: "Video Name 1",                           
+                           VideoName: "Class XII - Mathematics",                           
                        },
                        {
                            Id: 2,
@@ -290,10 +302,7 @@
                     if (urlparam[0] == "videoid") {
                         debugger;
                         videoId = urlparam[1];
-                        var objCurrentVideoData = _.find(objVideoData, function (val) {
-                            var d = val;
-                            return val.Id == urlparam[1];
-                        });
+                        var objCurrentVideoData = _.find(objVideoData, function (val) { return val.Id == urlparam[1]; });
                         $("#spanVideoId").text(objCurrentVideoData.VideoName.trim());
                         $.ajax({
                             type: "GET",
@@ -313,12 +322,12 @@
                                         for (var i = 1; i <= rate; i++) {
                                             str += "<span class='glyphicon glyphicon-star' aria-hidden='true'></span>";
                                         }
-                                        var markup = "<tr><td>" + str + "</td><td> " + value.UserName + " :- " + value.Comment + "</td></tr>";
+                                        var markup = "<tr><td>" + str + "</td><td><u> " + value.UserName + "</u>: " + value.Comment + "</td></tr>";
                                         $("table tbody").append(markup);
                                     });
                                 }
                                 else {
-                                    var markup = "<tr colspan='2'><td>No any feedback found</td></tr>";
+                                    var markup = "<tr colspan='2'><td>Be the first one to write the video feedback</td></tr>";
                                     $("table tbody").append(markup);
                                 }
 
@@ -334,7 +343,7 @@
             }
 
 
-            $("#feedbackform").submit(function (e) {
+     $("#feedbackform").submit(function (e) {
                 e.preventDefault();
                 $("#Save").attr("disabled", true);
                 $("#pSavedFeedback").hide();
@@ -384,6 +393,8 @@
                 }
 
             });
+          
+            
           
 
         });
