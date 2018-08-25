@@ -1,10 +1,12 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Courses</title>
-     
+    <title>Contact US</title>
+    <meta name="description" content="Free Bootstrap Theme by uicookies.com">
+    <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+    
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700|Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="css/styles-merged.css">
     <link rel="stylesheet" href="css/style.css">
@@ -47,7 +49,7 @@
           </div>
         </div>
       </div>
-     <nav class="navbar navbar-default probootstrap-navbar">
+      <nav class="navbar navbar-default probootstrap-navbar">
         <div class="container">
           <div class="navbar-header">
             <div class="btn-more js-btn-more visible-xs">
@@ -67,11 +69,11 @@
                <li><a href="index.html">Home</a></li>
               <li><a href="courses.html">Courses</a></li>
               <li><a href="teachers.html">Faculty</a></li>
-               <li><a href="askquestion.html">Ask Question</a></li>
+              <li><a href="contact.html">Ask Question</a></li>
               
               
 
-              <li><a href=""><div style="border-radius: 25px;background-color:#edf8d8; width: 44px;border: 1px solid green;padding: 3px; margin: 0px;"> Hindi </div></a></li>
+               <li><a href=""><div style="border-radius: 25px;background-color:#edf8d8; width: 44px;border: 1px solid green;padding: 3px; margin: 0px;"> Hindi </div></a></li>
               <li><a href=""><div style="border-radius: 25px;background-color:#edf8d8; width: 58px;border: 1px solid green;padding: 3px; margin: 0px;"> English</div></a></li>
                
             </ul>
@@ -83,105 +85,83 @@
         <div class="container">
           <div class="row">
             <div class="col-md-12 text-left section-heading probootstrap-animate">
-              <h1>Our Lectures</h1>
+              <h1 class="mb0">Contact Us</h1>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="probootstrap-section">
+      
+
+      <section class="probootstrap-section probootstrap-section-sm">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
-              <div class="probootstrap-flex-block">
-                <div class="probootstrap-text probootstrap-animate">
-                  <div class="text-uppercase probootstrap-uppercase">Featured Lecture</div>
-                  <h3>Trignometry</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis explicabo veniam labore ratione illo vero voluptate a deserunt incidunt odio aliquam commodi blanditiis voluptas error non rerum temporibus optio accusantium!</p>
-                  <p><a href="#" class="btn btn-primary">Play</a> <span class="enrolled-count">2,928 students enrolled</span></p>
+              <div class="row probootstrap-gutter0">
+                <div class="col-md-4" id="probootstrap-sidebar">
+                  <div class="probootstrap-sidebar-inner probootstrap-overlap probootstrap-animate">
+                    <h3>Hello !!!</h3>
+                    <ul class="probootstrap-side-menu">
+                     
+                     On this page you can contact us by using the below form and choosing the appropriate category.
+                     We will try our best to get back back to you within 2 working days.
+                     
+                    </ul>
+                  </div>
                 </div>
-                <div class="probootstrap-image probootstrap-animate" style="background-image: url(img/slider_3.jpg)">
-                  <a href="https://vimeo.com/45830194" class="btn-video popup-vimeo"><i class="icon-play3"></i></a>
+                <div class="col-md-7 col-md-push-1  probootstrap-animate" id="probootstrap-content">
+                  <h2>Get In Touch</h2>
+                  <p>Contact us using the form below.</p>
+                    <form name="postform" id="postform">
+                        <div class="form-group">
+                            <label for="Category">Category</label>
+                            <select class="form-control" id="Category" name="Category">
+                                <option value="Enquiry">Enquiry</option>
+                                <option value="Feedback">Feedback</option>
+                                <option selected value="Question">Question</option>
+                                <option value="Complaint">Complaint</option>
+
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="FirstName">Full Name</label>
+                            <input type="text" class="form-control" id="FirstName" name="FirstName" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="Email">Email</label>
+                            <input type="email" class="form-control" id="Email" name="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="Street">City / Town / Village</label>
+                            <input type="text" class="form-control" id="Street" name="Street">
+                        </div>
+                        <div class="form-group">
+                            <label for="MobilePhone">Mobile</label>
+                            <input type="number" class="form-control" id="MobilePhone" name="MobilePhone">
+                        </div>
+                        <div class="form-group">
+                            <label for="Subject">Subject</label>
+                            <input type="text" class="form-control" id="Subject" name="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="Comment">Message</label>
+                            <textarea cols="30" rows="10" class="form-control" id="Comment" name="Comment"></textarea>
+                        </div>
+                        <p>We respect and comply with Person Identifiable Information proviacy, this data will be used only for stated purpose</p>
+                        <div class="form-group">
+                            <input type="submit" class="btn btn-primary btn-lg" id="Save" name="Save" value="Send Message">
+                        </div>
+                    </form>                    
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-
-      <section class="probootstrap-section">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="probootstrap-service-2 probootstrap-animate">
-                <div class="image">
-                  <div class="image-bg">
-                    <img src="img/img_sm_1.jpg">
-                  </div>
-                </div>
-                <div class="text">
-                  <span class="probootstrap-meta"><i class="icon-calendar2"></i> Class XI</span>
-                  <h3>Mathematics</h3>
-                  <p>Laboriosam pariatur modi praesentium deleniti molestiae officiis atque numquam quos quis nisi voluptatum architecto rerum error.</p>
-                  <p><a href="comments.html" class="btn btn-primary btn-video popup-vimeo">Play</a>  <span class="enrolled-count">2,928 students enrolled</span></p>
-                </div>
-              </div>
-
-              <div class="probootstrap-service-2 probootstrap-animate">
-                <div class="image">
-                  <div class="image-bg">
-                    <img src="img/img_sm_3.jpg">
-                  </div>
-                </div>
-                <div class="text">
-                  <span class="probootstrap-meta"><i class="icon-calendar2"></i> Class XI</span>
-                  <h3>Physics</h3>
-                  <p>Laboriosam pariatur modi praesentium deleniti molestiae officiis atque numquam quos quis nisi voluptatum architecto rerum error.</p>
-                  <p><a href="#" class="btn btn-primary">Play</a> <span class="enrolled-count">7,202 students enrolled</span></p>
-                </div>
-              </div>
-
-            </div>
-            <div class="col-md-6">
-              <div class="probootstrap-service-2 probootstrap-animate">
-                <div class="image">
-                  <div class="image-bg">
-                    <img src="img/img_sm_2.jpg" alt="Free Bootstrap Template by uicookies.com">
-                  </div>
-                </div>
-                <div class="text">
-                  <span class="probootstrap-meta"><i class="icon-calendar2"></i> Class XI</span>
-                  <h3>Chemistry</h3>
-                  <p>Laboriosam pariatur modi praesentium deleniti molestiae officiis atque numquam quos quis nisi voluptatum architecto rerum error.</p>
-                  <p><a href="#" class="btn btn-primary">Play</a> <span class="enrolled-count">12,582 students enrolled</span></p>
-                </div>
-              </div>
-
-              <div class="probootstrap-service-2 probootstrap-animate">
-                <div class="image">
-                  <div class="image-bg">
-                    <img src="img/img_sm_4.jpg" alt="Free Bootstrap Template by uicookies.com">
-                  </div>
-                </div>
-                <div class="text">
-                  <span class="probootstrap-meta"><i class="icon-calendar2"></i> Class XI</span>
-                  <h3>Biology</h3>
-                  <p>Laboriosam pariatur modi praesentium deleniti molestiae officiis atque numquam quos quis nisi voluptatum architecto rerum error.</p>
-                  <p><a href="#" class="btn btn-primary">Play</a> <span class="enrolled-count">9,582 students enrolled</span></p>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-        
-          </div>
-        </div>
-      </section>
-
       
-      
-    <section class="probootstrap-cta">
+      <section class="probootstrap-cta">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
@@ -209,7 +189,6 @@
             </div>
             <div class="col-md-3 col-md-push-1">
               <div class="probootstrap-footer-widget">
-               
                <h3>Links</h3>
                 <ul>
                   <li><a href="about.html">About Us</a></li>
@@ -251,11 +230,88 @@
 
     </div>
     <!-- END wrapper -->
+
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" role="dialog">
+          <div class="modal-dialog modal-sm">
+              <div class="modal-content">   
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" style="margin-top:0px !important">&times;</button>
+                  </div>              
+                  <div class="modal-body">
+                    <p>Email sent to the support team</p>
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal" onclick='location.href="/YesgurujiApp/English/index.html"'>Close</button>
+                  </div>
+              </div>
+          </div>
+      </div>
     
 
     <script src="js/scripts.min.js"></script>
     <script src="js/main.min.js"></script>
     <script src="js/custom.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+      <script>
+
+    $(document).ready(function () {
+
+        $("#postform").submit(function (e) {
+            e.preventDefault();
+            $("#Save").attr("disabled", true);
+
+            var contact = new Object();
+
+            contact.Category = $('#Category option:selected').val();
+
+            contact.FirstName = $('#FirstName').val();
+
+            contact.Email = $('#Email').val();
+
+            contact.Street = $('#Street').val();
+
+            contact.MobilePhone = $('#MobilePhone').val();
+
+            contact.Subject = $('#Subject').val();
+
+            contact.Comment = $('#Comment').val();
+
+            $.ajax({
+
+                url: '/api/Contact',
+
+                type: 'POST',
+
+                dataType: 'json',
+
+                data: contact,
+
+                success: function (data, textStatus, xhr) {
+                    //location.href = "/YesgurujiApp/index.html"                                        
+                    $("#myModal").modal("show");
+                    $("#Save").attr("disabled", false);
+                },
+
+                error: function (xhr, textStatus, errorThrown) {
+                    $("#Save").attr("disabled", false);
+                    console.log('Error in Operation');
+
+                }
+
+            });
+
+
+
+
+
+        });
+
+    });
+
+      </script>
+
 
   </body>
 </html>

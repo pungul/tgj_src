@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact US</title>
+    <meta name="description" content="Free Bootstrap Theme by uicookies.com">
+    <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700|Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles-merged.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/custom.css">  
+</head>
+<body>    
+    <script src="../YesgurujiApp/English/js/scripts.min.js"></script>
+    <script src="../YesgurujiApp/English/js/main.min.js"></script>
+    <script src="../YesgurujiApp/English/js/custom.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            var url = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+            for (var i = 0; i < url.length; i++) {
+                var urlparam = url[i].split('=');
+                if (urlparam[0] == "videoid") {                 
+                    videoId = urlparam[1];               
+                    var lng = localStorage.getItem("lng");
+                    location.href = "/YesgurujiApp/" + lng + "/feedback.html??videoid=" + videoId;
+                }
+            }
+        });
+    </script>
+
+</body>
+</html>

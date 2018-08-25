@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
    <meta charset="utf-8">
@@ -77,8 +77,8 @@
                         
               
 
-              <li><a href=""><div style="border-radius: 25px;background-color:#edf8d8; width: 44px;border: 1px solid green;padding: 3px; margin: 0px;"> Hindi </div></a></li>
-              <li><a href=""><div style="border-radius: 25px;background-color:#edf8d8; width: 58px;border: 1px solid green;padding: 3px; margin: 0px;"> English</div></a></li>
+                <li><a href="#"><div style="border-radius: 25px;background-color:#edf8d8; width: 44px;border: 1px solid green;padding: 3px; margin: 0px;" onclick="openConfirm('Hindi')"> Hindi </div></a></li>
+                <li><a href="#"><div style="border-radius: 25px;background-color:#edf8d8; width: 58px;border: 1px solid green;padding: 3px; margin: 0px;" onclick="openConfirm('English')"> English</div></a></li>
                
             </ul>
           </div>
@@ -567,6 +567,24 @@
           </div>
         </div>
       </section>
+
+      <!-- Modal -->
+      <div class="modal fade" id="myConfirmModal" role="dialog">
+          <div class="modal-dialog modal-md">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+                  <div class="modal-body">
+                      <p id="msg"></p>
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-primary" data-dismiss="modal" onclick='redirectLangPage()'>Ok</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+
       <footer class="probootstrap-footer probootstrap-bg">
         <div class="container">
           <div class="row">
@@ -633,6 +651,26 @@
     <script src="js/scripts.min.js"></script>
     <script src="js/main.min.js"></script>
     <script src="js/custom.js"></script>
+
+      <script>
+
+    function openConfirm(lang) {
+        localStorage.setItem("lng", lang);
+        if (lang == "Hindi") {
+            $("#msg").text("You redirect to English language to " + lang);
+        }
+        else {
+            $("#msg").text("You redirect to Hindi language to " + lang);
+        }
+
+        $("#myConfirmModal").modal("show");
+    }
+
+    function redirectLangPage() {
+        var lng = localStorage.getItem("lng");
+        location.href = "/YesgurujiApp/" + lng + "/index.html";
+    }
+      </script>
 
   </body>
 </html>
